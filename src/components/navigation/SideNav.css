@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+:root{
+    --blue: #037fff;
+    --darkblue: #191d2b;
+    --palelightblue:#6e7894; 
+}
+
+.sideNavContainer{
+    z-index: +1;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 100vh;
+    position: fixed;
+    width: 15%;
+    left: 0;
+    top: 0;
+    border-right: 1px solid var(--palelightblue);
+    border-width: thin;
+    background-color: var(--darkblue);
+}
+
+.selectedNav{
+    display: flex;
+    justify-content: center;
+    font-size: 1.55rem;
+    font-weight: 500;
+    height: 42px;
+    width: 100%;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    transition:color 0.25s ease;
+    background: var(--blue);
+    color: #ffffff !important;
+}
+
+.sideNavContainer .navHeadImgContainer{
+    height: 25vh;
+    border-bottom: 1px solid var(--palelightblue);
+    border-width: thin;
+}
+
+.sideNavContainer .navHeadImgContainer .navHeadImg{
+    position: relative;
+    width: 18vh;
+    height: 18vh;
+    margin: auto;
+    top: 2.9vh;
+    border-radius: 50%;
+    border: 5px solid var(--palelightblue);
+    background-image: url(./navImg.jpg);
+    background-size: contain;
+}
+
+.sideNavContainer .navItems{
+    height: 69vh;
+    border-bottom: 1px solid var(--palelightblue);
+    border-width: thin;
+
+}
+.sideNavContainer .navItems .navList{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    top: 45vh;
+    color: var(--palelightblue);
+    height: 69vh;
+    justify-content: center;
+}
+
+.sideNavContainer .navItems .navList .item{
+    display: flex;
+    justify-content: center;
+    font-size: 1.55rem;
+    font-weight: 500;
+    height: 42px;
+    width: 100%;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    transition:color 0.25s ease;
+    background: none;
+    
+}
+.sideNavContainer .navItems .navList a{
+    text-decoration: none;
+    color: var(--palelightblue)
+}
+
+.sideNavContainer .navItems .navList .item:hover{
+    color: #ffffff;
+}
+
+.sideNavContainer .navItems .navList .item::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 42px;
+    background-color: #73b9ff5b;
+    transform-origin: left;
+    transition:width 0.3s ease;
+    z-index: -1;
+}
+.sideNavContainer .navItems .navList .item:hover::after{
+    width: 100%;
+}
+
+.sideNavContainer .navFooter{
+    height: 5.5vh;
+    display: flex;
+    font-size: 1.15rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--palelightblue)
+}

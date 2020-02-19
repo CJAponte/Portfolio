@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+:root{
+    --blue: #037fff;
+    --darkblue: #252b3f;
+    --palelightblue:#6e7894; 
+}
+
+.homeContainer{
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85%;
+    background-color: #10121b
+}
+
+.homeContainer .homeBodyContainer {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeContainer .homeBodyContainer .homeHeader{
+    margin: 2vh auto;
+    color: #ffffff;
+    font-size: 7.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.homeContainer .homeBodyContainer .homeBody{
+    margin: 2vh auto;
+    color: #ffffff;
+    font-size: 2.25rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.homeContainer .homeBodyContainer .socialLinks{
+    display: flex;
+    
+    width: 200px;
+    justify-content: space-evenly;
+    margin: 2vh auto;
+}
+
+.homeContainer .homeBodyContainer .socialLinks #githubIcon{
+    width: 5vh;
+    height: 5vh;
+    background-image: url(./Github_2.png);
+    background-size: contain;
+    
+}
+.homeContainer .homeBodyContainer .socialLinks #linkedinIcon{
+    width: 5vh;
+    height: 5vh;
+    background-image: url(./Linkedin_2.png);
+    background-size: contain;
+}
+.homeContainer .homeBodyContainer .socialLinks #twitterIcon{
+    width: 5vh;
+    height: 5vh;
+    background-image: url(./Twitter_2.png);
+    background-size: contain;
+}
+
+
+.homeContainer .homeBodyContainer .resumeBtn {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    font-size: 1.55rem;
+    font-weight: 500;
+    height: 42px;
+    width: 200px;
+    align-items: center;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+    background-color: var(--palelightblue);
+}
+
+.homeContainer .homeBodyContainer .resumeLink{
+    text-decoration: none;
+    color: black
+}
+
+.homeContainer .homeBodyContainer .resumeBtn:hover {
+    background-color: var(--blue);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.homeContainer .homeBodyContainer .resumeBtn p{
+    font-size: 1.4rem;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 5px;
+    text-decoration: none;
+}

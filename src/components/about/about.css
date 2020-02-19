@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+:root{
+    --blue: #037fff;
+    --darkblue: #252b3f;
+    --palelightblue:#6e7894; 
+}
+
+.aboutContainer{
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85%;
+    background-color: var(--darkblue);
+    display: flex;
+}
+
+
+.aboutContainer .aboutSection{
+    width: 75%;
+    height: 85vh;
+    margin: auto auto;
+    display: flex;
+}
+
+.aboutContainer .aboutSection .firstColumn{
+    width: 50%;
+    height: 85vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer .aboutSection .firstColumn .firstColumnFirstBox{
+    width: 100%;
+    height: 42.5vh;
+    border: 1px solid purple;
+    display: flex;
+    
+}
+
+.aboutContainer .aboutSection .firstColumn .firstColumnFirstBox p{
+    width: 100%;
+    text-align: right;    
+    margin-top: auto;
+    padding: 2vh;
+}
+
+.aboutContainer .aboutSection .firstColumn .firstColumnSecondBox{
+    width: 100%;
+    height: 42.5vh;
+    border: 1px solid green;
+}
+
+.aboutContainer .aboutSection .secondColumn{
+    width: 50%;
+    height: 85vh;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutContainer .aboutSection .secondColumn .secondColumFirstBox{
+    width: 100%;
+    height: 42.5vh;
+    border: 1px solid red;
+}
+.aboutContainer .aboutSection .secondColumn .secondColumSecondBox{
+    width: 100%;
+    height: 42.5vh;
+    border: 1px solid yellow;
+}

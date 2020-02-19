@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+:root{
+    --blue: #037fff;
+    --darkblue: #252b3f;
+    --palelightblue:#6e7894; 
+}
+
+.contactContainer{
+    float: right;
+    width: 85%;
+    height: 100vh;
+    background-color: #10121b
+}
