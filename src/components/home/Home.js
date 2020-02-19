@@ -17,10 +17,7 @@ const Home = props => {
                 <a href='https://drive.google.com/u/0/uc?id=1L8zzNG6XLxb-XQUTmmuzpWSOGBbRUGCV&export=download' target="_blank" rel="noopener noreferrer" className="resumeLink"><div className="resumeBtn">
                     <p>Resume</p>
                 </div></a>
-
             </div>
-
-            
         </div>
     )
 }
