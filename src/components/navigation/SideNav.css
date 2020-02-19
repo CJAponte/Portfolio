@@ -117,3 +117,60 @@
     justify-content: center;
     color: var(--palelightblue)
 }
+
+
+@media(max-width: 1300px){
+.sideNavContainer{
+    display: none;
+    width: 20%;
+}
+
+.sideNavHidden{
+    display: flex;
+}
+
+
+.opener{
+    height: 45px;
+    width: 45px;
+    background-image: url(./hamburger.png);
+    background-size: contain;
+    z-index: +1;
+    background-color: none;
+    position: fixed;
+    margin: 15px;
+    cursor: pointer;
+    /* left: .5%; */
+}
+.closer{
+    height: 35px;
+    width: 35px;
+    background-image: url(./closer.png);
+    background-size: contain;
+    z-index: +1;
+    background-color: none;
+    position: fixed;
+    margin: 20px;
+    cursor: pointer;
+    left: 20%;
+}
+}
+
+@media(max-width: 900px){
+    .sideNavContainer{
+        width: 30%;
+    }
+    .closer{
+        left: 30%
+    }
+}
+
+@media(max-width: 600px){
+    .sideNavContainer{
+        width: 100%;
+    }
+
+    .closer{
+        left: 85%
+    }
+}

@@ -98,3 +98,10 @@
     padding-bottom: 5px;
     text-decoration: none;
 }
+
+
+@media(max-width: 1300px){
+    .homeContainer{
+        width: 100%;
+    }
+}

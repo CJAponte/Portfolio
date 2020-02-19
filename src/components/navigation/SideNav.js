@@ -1,5 +1,5 @@
 import React, {useEffect } from "react"
-import { Link } from 'react-router-dom'
+import { Link, BrowserRouter } from 'react-router-dom'
 import './SideNav.css'
 const SideNav = props => {
  
@@ -13,8 +13,24 @@ const SideNav = props => {
         }
     })
 
+    
+
+    function openMenu(){
+        // document.getElementById("menuCloser").classList.remove('opener')
+        document.getElementById("menuCloser").classList.toggle("closer")
+        document.getElementById("sideNavContainer").classList.toggle("sideNavHidden")
+
+        
+    }
+
+    function menuReset(){
+        document.getElementById("menuCloser").classList.remove("closer")
+        document.getElementById("sideNavContainer").classList.remove("sideNavHidden")
+    }
+
     return(
-        <div className="sideNavContainer">
+        <div className="sideNavBody">
+        <div className="sideNavContainer" id="sideNavContainer">
             <div className="mobileBtn"></div>
             <div className="navHeadImgContainer">
                 <div className="navHeadImg"></div>
@@ -22,13 +38,16 @@ const SideNav = props => {
             </div>
             <div className="navItems">
                 <ul className="navList">
-                <Link to="/"><li className={"item"} id="homeTab">Home</li></Link>
-                <Link to="/portfolio"><li className={"item"} id="portfolioTab">Portfolio</li></Link>
+                <Link to="/"><li className={"item"} id="homeTab" onClick={menuReset}>Home</li></Link>
+                <Link to="/portfolio"><li className={"item"} id="portfolioTab" onClick={menuReset}>Portfolio</li></Link>
                 </ul>
             </div>
             <div className="navFooter">
                 2020 - 2021
             </div>
+        </div>
+        
+        <div id="menuCloser" className="opener" onClick={openMenu}>  </div>
         </div>
     )
 }

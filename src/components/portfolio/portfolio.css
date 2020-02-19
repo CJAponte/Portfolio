@@ -95,3 +95,11 @@
     background-image: url(./Live_5.png);
     background-size: contain;
 }
+
+
+
+@media(max-width: 1300px){
+    .portfolioContainer{
+        width: 100%;
+    }
+}
