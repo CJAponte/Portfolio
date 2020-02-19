@@ -83,7 +83,9 @@
 
 .homeContainer .homeBodyContainer .resumeLink{
     text-decoration: none;
-    color: black
+    color: black;
+    width: 200px;
+    margin: 0px auto;
 }
 
 .homeContainer .homeBodyContainer .resumeBtn:hover {
