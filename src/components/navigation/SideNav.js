@@ -43,7 +43,7 @@ const SideNav = props => {
                 </ul>
             </div>
             <div className="navFooter">
-                2020 - 2021
+                Built with React and Firebase
             </div>
         </div>
         
