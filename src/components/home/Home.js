@@ -14,7 +14,7 @@ const Home = props => {
                     <a href="https://www.linkedin.com/in/cjaponte/" target="_blank" rel="noopener noreferrer" className="socialLinkTags"><div  id="linkedinIcon"></div></a>
                     <a href="https://twitter.com/CJApontevazquez" target="_blank" rel="noopener noreferrer" className="socialLinkTags"><div id="twitterIcon"></div></a>
                 </div>
-                <a href='https://drive.google.com/u/0/uc?id=1L8zzNG6XLxb-XQUTmmuzpWSOGBbRUGCV&export=download' target="_blank" rel="noopener noreferrer" className="resumeLink"><div className="resumeBtn">
+                <a href='https://drive.google.com/u/0/uc?id=1YI_hY4bK8JQ9dID1PW4-43vUW06K8orS&export=download' target="_blank" rel="noopener noreferrer" className="resumeLink"><div className="resumeBtn">
                     <p>Resume </p>
                 </div></a>
                 <div className="subText">(Download PDF)</div>
